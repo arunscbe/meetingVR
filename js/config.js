@@ -31,7 +31,7 @@ $(document).ready(function(){
         init.renderer.domElement.addEventListener('pointerdown', onDocumentMouseDown, true);
 
         $('.backBtn').on('click',function(){
-            init.scene.getObjectByName("globe").material.map = init.textureLoad("tex/Lobby_001.png");
+            init.scene.getObjectByName("globe").material.map = init.textureLoad("tex/Lobby_002.png");
             forShowSprite(spriteData.slice(0,2));
         });
     }else if(detect == 0){       
@@ -187,11 +187,11 @@ function onDocumentMouseDown(event){
         SELECTED = intersects[ 0 ].object;
         switch (SELECTED.name) {
             case "auditorium":
-                 _getObj.material.map = init.textureLoad("tex/Auditorium_001.png");
+                 _getObj.material.map = init.textureLoad("tex/Auditorium_002.png");
                  forHideSprite(spriteData.slice(0,2));
                 break;
             case "exhibitHall":
-                _getObj.material.map = init.textureLoad("tex/Exhibit Hall_001.png");
+                _getObj.material.map = init.textureLoad("tex/Exhibit Hall_002.png");
                  forHideSprite(spriteData.slice(0,2));
                 break;
             default:
